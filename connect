@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=http://3.14.252.141/connect">
+    <script>
+        // Redirect to the bootstrap node
+        window.location.href = "http://3.14.252.141/connect";
+    </script>
 </head>
 <body>
     <p>Redirecting to the bootstrap node...</p>
