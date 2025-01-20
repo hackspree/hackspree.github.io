@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script>
-        // Redirect to the bootstrap node
-        window.location.href = "http://3.14.252.141/connect";
-    </script>
-</head>
-<body>
-    <p>Redirecting to the bootstrap node...</p>
-</body>
-</html>
+/ip4/3.14.252.141/tcp/4001/p2p/12D3KooWGWwu9WmkFVJ9VWaGgJg4C3GHAH28WwUestfAPnhhc2F9
