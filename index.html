@@ -1,32 +1,39 @@
 <!doctype html>
-<html lang="en" style="background:#ffffff !important;">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="light only">
+  <meta name="color-scheme" content="dark only">
   <title>Mo — Software Engineer</title>
   <style>
-    html{
-      background:#ffffff !important;
+    :root{
+      --bg:#000000;
+      --text:#ffffff;
+      --muted:#b3b3b3;
+    }
+
+    *{box-sizing:border-box}
+
+    html,body{
+      margin:0;
+      min-height:100%;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,Arial,Helvetica,sans-serif;
     }
 
     body{
-      margin:0;
       min-height:100vh;
-      background:#ffffff !important;
-      color:#111111 !important;
-      font-family: Arial, Helvetica, sans-serif;
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
+      padding:24px;
     }
 
     .wrap{
       width:100%;
-      max-width:700px;
-      padding:40px 24px;
-      background:#ffffff !important;
+      max-width:720px;
     }
 
     .logo{
@@ -38,32 +45,34 @@
 
     h1{
       margin:0;
-      font-size:56px;
+      font-size:clamp(3rem,8vw,5rem);
       font-weight:700;
-      letter-spacing:-0.04em;
-      color:#111111 !important;
+      letter-spacing:-0.05em;
+      color:var(--text);
     }
 
     .role{
       margin:12px 0 0;
       font-size:18px;
-      color:#444444 !important;
+      color:var(--muted);
     }
 
     .quote{
-      margin:32px 0 0;
+      margin:32px auto 0;
+      max-width:620px;
       font-size:22px;
-      color:#111111 !important;
+      line-height:1.4;
+      color:var(--text);
       font-style:italic;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <main class="wrap">
     <img src="logo.png" alt="Logo" class="logo">
     <h1>Mo</h1>
     <p class="role">Software Engineer</p>
     <p class="quote">“Simplicity is a prerequisite for reliability.”</p>
-  </div>
+  </main>
 </body>
 </html>
