@@ -1,48 +1,69 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background:#ffffff !important;">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light only">
-  <title>Mo — AI/Software Engineer</title>
+  <title>Mo — Software Engineer</title>
   <style>
-    :root{
-      --bg:#f5f7fa; --card:#fff; --text:#111; --muted:#667085; --line:#e7ebf0;
+    html{
+      background:#ffffff !important;
     }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0; min-height:100%; background:var(--bg)!important; color:var(--text)!important;
-      font-family:Inter,Arial,sans-serif;
-    }
+
     body{
-      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+      margin:0;
+      min-height:100vh;
+      background:#ffffff !important;
+      color:#111111 !important;
+      font-family: Arial, Helvetica, sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
     }
-    main{
-      width:min(720px,100%); background:var(--card)!important; border:1px solid var(--line);
-      border-radius:24px; padding:40px 28px; text-align:center;
-      box-shadow:0 12px 40px rgba(0,0,0,.06);
+
+    .wrap{
+      width:100%;
+      max-width:700px;
+      padding:40px 24px;
+      background:#ffffff !important;
     }
+
     .logo{
-      display:block; width:72px; height:auto; margin:0 auto 20px; object-fit:contain;
+      display:block;
+      width:72px;
+      height:auto;
+      margin:0 auto 24px;
     }
+
     h1{
-      margin:0; font-size:clamp(2.2rem,6vw,4rem); letter-spacing:-.04em;
+      margin:0;
+      font-size:56px;
+      font-weight:700;
+      letter-spacing:-0.04em;
+      color:#111111 !important;
     }
-    p{
-      margin:10px 0 0; color:var(--muted); font-size:1.05rem;
+
+    .role{
+      margin:12px 0 0;
+      font-size:18px;
+      color:#444444 !important;
     }
-    blockquote{
-      margin:28px 0 0; padding-top:22px; border-top:1px solid var(--line);
-      font-size:1.1rem; font-style:italic; color:var(--text);
+
+    .quote{
+      margin:32px 0 0;
+      font-size:22px;
+      color:#111111 !important;
+      font-style:italic;
     }
   </style>
 </head>
 <body>
-  <main>
+  <div class="wrap">
     <img src="logo.png" alt="Logo" class="logo">
     <h1>Mo</h1>
-    <p>Software Engineer</p>
-    <blockquote>“Simplicity is a prerequisite for reliability.”</blockquote>
-  </main>
+    <p class="role">Software Engineer</p>
+    <p class="quote">“Simplicity is a prerequisite for reliability.”</p>
+  </div>
 </body>
 </html>
