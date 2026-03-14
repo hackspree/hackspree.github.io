@@ -80,20 +80,66 @@
       color: #fff;
       opacity: 0.95;
     }
+
+h3{
+  margin:0;
+  font-size:clamp(1.5rem,3vw,2.1rem);
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.quote-block{
+  margin:42px auto 0;
+  max-width:760px;
+}
+
+.quote{
+  margin:0;
+  font-size:clamp(1.3rem,2.5vw,2rem);
+  line-height:1.6;
+  font-style:italic;
+  font-weight:500;
+  color:#fff;
+  position:relative;
+}
+
+.quote::before,
+.quote::after{
+  color:#666;
+  font-size:1.4em;
+}
+
+.quote::before{ content:"“ "; }
+.quote::after{ content:" ”"; }
+
+.quote-author{
+  margin-top:14px;
+  font-size:.72rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#8b8b8b;
+}
   </style>
 </head>
 <body>
   <div class="bg"></div>
 
-  <main class="wrap">
-    <section class="content">
-      <img src="logo.png" alt="Logo" class="logo">
-      <h3>Mohamed A. Fouad</h3>
-      <p class="role">AI/Software Engineer</p>
-      <p class="quote">
-    “Simplicity is prerequisite for reliability.” Edsger W. Dijkstra  
-      </p>
-    </section>
-  </main>
-</body>
+<main class="wrap">
+  <section class="content">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h3>Mohamed A. Fouad</h3>
+    <p class="role">AI/Software Engineer</p>
+
+    <figure class="quote-block">
+      <blockquote class="quote">
+        Simplicity is a prerequisite for reliability.
+      </blockquote>
+      <figcaption class="quote-author">— Edsger W. Dijkstra</figcaption>
+    </figure>
+  </section>
+</main>
+
+ </body>
 </html>
