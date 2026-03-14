@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,11 +6,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark only">
   <title>Mo — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#000000;
-      --text:#ffffff;
-      --muted:#b3b3b3;
+      --bg:#000;
+      --text:#fff;
+      --muted:#9ca3af;
     }
 
     *{box-sizing:border-box}
@@ -19,7 +23,7 @@
       min-height:100%;
       background:var(--bg);
       color:var(--text);
-      font-family:Inter,Arial,Helvetica,sans-serif;
+      font-family:'Orbitron', Arial, sans-serif;
     }
 
     body{
@@ -33,37 +37,39 @@
 
     .wrap{
       width:100%;
-      max-width:720px;
+      max-width:760px;
     }
 
     .logo{
       display:block;
-      width:72px;
+      width:84px;
       height:auto;
-      margin:0 auto 24px;
+      margin:0 auto 28px;
     }
 
     h1{
       margin:0;
-      font-size:clamp(3rem,8vw,5rem);
+      font-size:clamp(3rem,8vw,5.5rem);
       font-weight:700;
-      letter-spacing:-0.05em;
-      color:var(--text);
+      letter-spacing:0.08em;
+      text-transform:uppercase;
     }
 
     .role{
-      margin:12px 0 0;
-      font-size:18px;
+      margin:14px 0 0;
+      font-size:15px;
+      letter-spacing:0.18em;
+      text-transform:uppercase;
       color:var(--muted);
     }
 
     .quote{
-      margin:32px auto 0;
-      max-width:620px;
-      font-size:22px;
-      line-height:1.4;
+      margin:36px auto 0;
+      max-width:680px;
+      font-size:18px;
+      line-height:1.7;
       color:var(--text);
-      font-style:italic;
+      opacity:.92;
     }
   </style>
 </head>
@@ -71,7 +77,7 @@
   <main class="wrap">
     <img src="logo.png" alt="Logo" class="logo">
     <h1>Mo</h1>
-    <p class="role">Software Engineer</p>
+    <p class="role">Professional Software Engineer</p>
     <p class="quote">“Simplicity is a prerequisite for reliability.”</p>
   </main>
 </body>
