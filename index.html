@@ -118,7 +118,6 @@
         .quote {
             margin: 0;
             font-size: 1rem;
-            font-style: italic;
             color: #fff;
             line-height: 1.9;
             position: relative;
@@ -130,13 +129,6 @@
             font-size: 1.4em;
         }
 
-        .quote::before {
-            content: "“ ";
-        }
-
-        .quote::after {
-            content: " ”";
-        }
 
         @media (max-width: 900px) {
             .wrap {
@@ -196,13 +188,20 @@
 
                     <p class="role">
                         On an engineering hackspree — Vim and blue switches all the way!
+
+                        <blockquote class="quote">
+                            Engineering speed is the ultimate competitive advantage! 
+                        </blockquote>
                     </p>
 
+
+                    <!--
                     <figure class="quote-block">
                         <blockquote class="quote">
                             Engineering speed is the ultimate competitive advantage!
                         </blockquote>
                     </figure>
+                    -->
                 </div>
             </section>
         </div>
