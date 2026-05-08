@@ -154,8 +154,8 @@
 
         .socials a::after {
             content: attr(data-tooltip);
-            bottom: calc(100% + 16px);
-            transform: translate(-50%, 6px);
+            top: calc(100% + 16px);
+            transform: translate(-50%, -6px);
             padding: 8px 12px;
             border: 1px solid rgba(156, 163, 175, 0.28);
             border-radius: 999px;
@@ -170,12 +170,12 @@
 
         .socials a::before {
             content: "";
-            bottom: calc(100% + 10px);
-            transform: translate(-50%, 6px) rotate(45deg);
+            top: calc(100% + 10px);
+            transform: translate(-50%, -6px) rotate(45deg);
             width: 10px;
             height: 10px;
-            border-right: 1px solid rgba(156, 163, 175, 0.28);
-            border-bottom: 1px solid rgba(156, 163, 175, 0.28);
+            border-left: 1px solid rgba(156, 163, 175, 0.28);
+            border-top: 1px solid rgba(156, 163, 175, 0.28);
             background: rgba(17, 24, 39, 0.96);
         }
 
