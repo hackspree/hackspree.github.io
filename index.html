@@ -132,15 +132,80 @@
         }
 
         .socials a {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             color: #9ca3af;
             font-size: 1.35rem;
             text-decoration: none;
             transition: color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
         }
 
+        .socials a::after,
+        .socials a::before {
+            position: absolute;
+            left: 50%;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+        }
+
+        .socials a::after {
+            content: attr(data-tooltip);
+            bottom: calc(100% + 16px);
+            transform: translate(-50%, 6px);
+            padding: 8px 12px;
+            border: 1px solid rgba(156, 163, 175, 0.28);
+            border-radius: 999px;
+            background: rgba(17, 24, 39, 0.96);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+            color: #e5e7eb;
+            font-size: 0.62rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .socials a::before {
+            content: "";
+            bottom: calc(100% + 10px);
+            transform: translate(-50%, 6px) rotate(45deg);
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid rgba(156, 163, 175, 0.28);
+            border-bottom: 1px solid rgba(156, 163, 175, 0.28);
+            background: rgba(17, 24, 39, 0.96);
+        }
+
         .socials a:hover {
             color: #fff;
             transform: translateY(-1px);
+        }
+
+        .socials a:hover::after,
+        .socials a:hover::before,
+        .socials a:focus-visible::after,
+        .socials a:focus-visible::before {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0);
+            transition-delay: 1.8s;
+        }
+
+        .socials a:focus-visible {
+            color: #fff;
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .socials a:focus-visible::before {
+            transform: translate(-50%, 0) rotate(45deg);
+        }
+
+        .socials a:hover::before {
+            transform: translate(-50%, 0) rotate(45deg);
         }
 
         .socials a.msc i {
@@ -227,26 +292,47 @@
                     </figure>
 
                     <div class="socials" aria-label="Social links">
-                        <a href="https://github.com/moresearch" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <a href="https://github.com/moresearch"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub"
+                           data-tooltip="Inspect the hackspree on GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://x.com/maf_hackspree" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <a href="https://x.com/maf_hackspree"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="X"
+                           data-tooltip="Catch the latest sparks on X">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/mo-fouad-425a8b262/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mo-fouad-425a8b262/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn"
+                           data-tooltip="See the polished side on LinkedIn">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://discord.gg/hd6K2mpM" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                        <a href="https://discord.gg/hd6K2mpM"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Discord"
+                           data-tooltip="Join the signal on Discord">
                             <i class="fa-brands fa-discord"></i>
                         </a>
-                        <a href="https://blog.hackspree.com" target="_blank" rel="noopener noreferrer" aria-label="Blog">
+                        <a href="https://blog.hackspree.com"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Blog"
+                           data-tooltip="Read the long-form build logs">
                             <i class="fa-solid fa-blog"></i>
                         </a>
                         <a href="https://repositorio.ufu.br/handle/123456789/47974"
                            class="msc"
                            target="_blank"
                            rel="noopener noreferrer"
-                           aria-label="MSc Thesis">
+                           aria-label="MSc Thesis"
+                           data-tooltip="Dive into the research roots">
                             <i class="fa-solid fa-user-graduate"></i>
                         </a>
                     </div>
