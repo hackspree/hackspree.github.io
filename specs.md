@@ -21,7 +21,6 @@
 ## Constraints and invariants
 
 - Preserve the current black background, dark aesthetic, and Orbitron typography.
-- The background carries a two-level square-grid pattern (graph paper / engineering blueprint feel): minor lines every 16 px at ~2.5 % white opacity, major lines every 80 px at ~6 % white opacity. Lines must remain very faint — low contrast — so they never compete with text readability.
 - Preserve the existing two-column desktop layout and stacked mobile layout.
 - Preserve external link safety attributes for outbound links (`target="_blank"` with `rel="noopener noreferrer"`).
 - Keep the social/profile row keyboard-accessible, with hover-hint behavior also available on visible focus.
