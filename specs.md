@@ -12,6 +12,8 @@
 
 ## Implementation rules
 
+- The site must use a favicon from the favicon/ directory. The main favicon should be referenced in index.html using a <link rel="icon" href="favicon/favicon.ico"> tag. Additional favicon sizes and manifest files in favicon/ may be referenced as needed for platform compatibility.
+
 - `index.html` is the source of truth for layout, content, and styling.
 - Font Awesome icons are loaded from the existing CDN stylesheet and should be reused for social/profile links.
 - The blog link should use a Font Awesome icon consistent with the rest of the social/profile icon row.
